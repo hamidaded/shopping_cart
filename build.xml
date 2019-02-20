@@ -1,4 +1,10 @@
 <project default="compile-testcases">
+    <property name="src.java.dir"location="./src/main/java/converter"/>
+     <property name="src.test.dir"location="./src/main/test"/>
+     <property name="result.dir"location="./target"/>
+     <property name="result.javaclasses.dir"location="${result.dir}/classes"/>
+     <property name="result.testclasses.dir"location="${result.dir}/testclasses"/>
+     
     <path id="NecessaryLibraries">
         <pathelement location="./UsedLibraries/junit-4.12.jar"/>
         <!--matcher-->
