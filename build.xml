@@ -9,7 +9,7 @@
         
     <target name="compile-testcases">
         <mkdir dir="${result.testclasses.dir}"/>
-        <javac destdir="${result.testclasses.dir}" debug="true" includeantruntime="false">
+        <javac srcdir="${src.test.dir}"  destdir="${result.testclasses.dir}" debug="true" includeantruntime="false">
             <classpath>
                 
                 <path refid="NecessaryLibraries"/>
